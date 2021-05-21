@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#container
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #dce8f7;
+    overflow: hidden;
+}
+/* navbar */
+#navbar
+{
+    height: 50px;
+    width: 925px;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 500px);
+    border-radius: 20px;
+    background: #01579B;
+    z-index: 999;
+    overflow: hidden;
+}
+#navbar ul
+{
+    height: 100%;
+    width: 965px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#navbar ul li a
+{
+    height: 100%;
+    width: auto;
+    margin: 0 40px;
+    font-size: 25px;
+    margin-left: 0;
+    display: grid;
+    align-items: center;
+    padding: 0 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #dce8f7;
+}
+#navbar ul li a:hover
+{
+    background: #ff0000;
+}
+/* background image */
+#sideImg
+{
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#sideImg img
+{
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* main content */
+#content
+{
+    height: 140px;
+    width: 250px;
+    position: absolute;
+    top: calc(50% - 197px);
+    left: 3%;
+    font-size: 17px;
+    z-index: 997;
+}
+#content h2
+{
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 140px;
+}
+#content h2 b
+{
+    color: #01579B;
+}
+#content button
+{
+    height: 80px;
+    width: 250px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #01579B;
+    color: #dce8f7;
+    font-size: 25px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+#content button:hover
+{
+    background: #000;
+}
+/* social media icons */
+#socialLinks
+{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+}
+#socialLinks a
+{
+    text-decoration: none;
+}
+#socialLinks a i
+{
+    height: 50px;
+    width: 50px;
+    margin: 0 20px;
+    font-size: 20px;
+    color: #dce8f7;
+    background: #01579B;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+#socialLinks a i:hover
+{
+    background: #000;
+}
+/* line */
+#line
+{
+    height: 7px;
+    width: 500px;
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    background: linear-gradient(to left,#000 50%,#01579B 50%);
+    border-radius: 100px;
+}

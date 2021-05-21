@@ -1,0 +1,123 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family:sans-serif;
+}
+#container {
+    height: 98vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #dce8f7;
+    overflow: hidden;
+}
+/* navbar */
+#navbar {
+    height: 50px;
+    width: 925px;
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 500px);
+    border-radius: 20px;
+    background: #01579B;
+    z-index: 999;
+    overflow: hidden;
+}
+
+    #navbar ul {
+        height: 100%;
+        width: 965px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+        #navbar ul li a {
+            height: 100%;
+            width: auto;
+            margin: 0 40px;
+            font-size: 25px;
+            margin-left: 0;
+            display: grid;
+            place-items: center;
+            padding: 0 40px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #dce8f7;
+        }
+
+            #navbar ul li a:hover {
+                background: #ff0000;
+            }
+
+body {
+    background: #dce8f7;
+    padding: 40px 0;
+}
+
+
+.wrapper{
+  position: absolute;
+  top: 60%;
+  left: 48%;
+  transform: translate(-50%,-50%);
+  max-width: 950px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+
+}
+
+    .wrapper h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #01579B;
+    }
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+    .wrapper .btn input[type="submit"] {
+        border: 0px;
+        margin-top: 15px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        background: #01579B;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: bold;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+#error_message {
+    margin-bottom: 20px;
+    background: #01579B;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
